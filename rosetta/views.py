@@ -5,6 +5,7 @@ from django.core.urlresolvers import reverse
 from django.http import Http404, HttpResponseRedirect, HttpResponse
 from django.shortcuts import render_to_response
 from django.template import RequestContext
+from django.utils.datastructures import SortedDict
 from django.utils.encoding import smart_unicode, iri_to_uri
 from django.utils.translation import ugettext_lazy as _
 from django.views.decorators.cache import never_cache
@@ -208,6 +209,7 @@ def home(request):
             return HttpResponseRedirect(reverse('rosetta-home') + iri_to_uri(query_arg))
 
         rosetta_messages = paginator.page(page).object_list
+
         if rosetta_settings.MAIN_LANGUAGE and rosetta_settings.MAIN_LANGUAGE != rosetta_i18n_lang_code:
 
             main_language = None
@@ -242,6 +244,17 @@ def home(request):
         if storage.has('rosetta_last_save_error'):
             storage.delete('rosetta_last_save_error')
             rosetta_last_save_error = True
+
+        for message in rosetta_messages:
+            if not message.msgid_plural:
+                continue
+
+            tmp = SortedDict()
+            keylist = sorted(map(int, message.msgstr_plural.keys()))
+            for k in keylist:
+                tmp[k] = message.msgstr_plural[str(k)]
+
+            message.msgstr_plural = tmp
 
         return render_to_response('rosetta/pofile.html', locals(), context_instance=RequestContext(request))
     else:

@@ -1,0 +1,101 @@
+{% load i18n %}
+{% load l10n %}
+{% load static %}
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+
+    <link rel="stylesheet" href="{% static 'css/page.css' %}">
+
+    <script type="text/javascript" src="{% static 'js/underscore/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/underscore/underscore-dev.js' %}"></script>
+    <script type="text/javascript" src="{% url i18n_javascript packages='django' %}"></script>
+</head>
+<body>
+{% get_language_info_list for available_languages as langs %}
+
+{% for lang in langs %}
+
+    {% language lang.code %}
+
+        <script type="application/template" id='jsTemplate'>
+            <h4> <%= gettext('Переведённый заголовок') %> </h4>
+            <p> <%= gettext('Переведённый текст') %> </p>
+        </script>
+
+        <script type="text/javascript">
+            $(function(){
+                var tpl = _.template($("#jsTemplate").html());
+                $('#js').html(tpl())
+            });
+        </script>
+
+
+
+        <div class="language-block">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_current_language_bidi as LANGUAGE_BIDI %}
+
+            <h4>А тут настроечки:</h4>
+            <p>LANGUAGE_CODE: {{ LANGUAGE_CODE }} </p>
+            <p>LANGUAGE: {{ LANGUAGE }} </p>
+            <p>LANGUAGE_BIDI: {{ LANGUAGE_BIDI }} </p>
+
+            <h4>Перевод на бэкэнде:</h4>
+            <p>Перевод этого текста сгенерили на бэкэнде внутри шаблона:</p>
+            <p>{% trans "Перевод этого текста сгенерили на бэкэнде внутри шаблона" context "На главной странице" %}</p>
+
+            <h4>А тут перевод множественного и единственного числа в template</h4>
+            count = 0 ->
+            <br />
+            {% blocktrans context "asdasd" count counter=0 with name=_("Козёл") %}
+                Тут только один {{ name }} {{ counter }}
+            {% plural %}
+                Тут только {{ counter }} {{ name }}
+            {% endblocktrans %}
+            <br />
+            <br />
+            count = 1 ->
+            <br />
+            {% blocktrans context "asdasd" count counter=1 with name=_("Козёл") %}
+                Тут только один {{ name }} {{ counter }}
+            {% plural %}
+                Тут только {{ counter }} {{ name }}
+            {% endblocktrans %}
+            <br />
+            <br />
+            count = 2 ->
+            <br />
+            {% blocktrans context "asdasd" count counter=2 with name=_("Козёл") %}
+                Тут только один {{ name }} {{ counter }}
+            {% plural %}
+                Тут только {{ counter }} {{ name }}
+            {% endblocktrans %}
+
+            <h4>А тут перевод с подстановками с датами:</h4>
+            {% localize on %}
+            <p>
+                {% blocktrans context "asdasd" with name=_("Козёл") %}
+                    Дата рождения {{ name }}: {{ born_at }}
+                {% endblocktrans %}
+            </p>
+            {% endlocalize %}
+
+            <h4>А тут мы шалим c js:</h4>
+
+            <div id="js">
+            </div>
+
+
+
+        </div>
+    {% endlanguage %}
+{% endfor %}
+
+</body>
+</html>

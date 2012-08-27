@@ -1,4 +1,5 @@
 from django import template
+from django.template.base import TemplateSyntaxError
 from django.utils.safestring import mark_safe
 from django.utils.html import escape
 import re
