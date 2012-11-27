@@ -8,3 +8,6 @@ build
 rosetta/locale/xx/LC_MESSAGES/*.mo
 /.settings
 /.project
+env
+testproject/env
+*.db

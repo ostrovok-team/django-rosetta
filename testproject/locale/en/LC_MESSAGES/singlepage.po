@@ -1,0 +1,9 @@
+#. Приветствие
+#: MAIN_PAGE
+msgid "Привет"
+msgstr "Hello"
+
+#. Приветствие 2
+#: MAIN_PAGE
+msgid "Здарова"
+msgstr "Hello"
