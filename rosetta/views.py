@@ -61,7 +61,7 @@ def home(request):
                 entry.md5hash = hashlib.md5(
                     entry.msgid.encode("utf8") +
                     entry.msgstr.encode("utf8") +
-                    (entry.msgctxt and entry.msgctxt.encode("utf8") or "") 
+                    (entry.msgctxt and entry.msgctxt.encode("utf8") or "")
                 ).hexdigest()
 
         else:
@@ -256,7 +256,11 @@ def home(request):
 
             message.msgstr_plural = tmp
 
-        return render_to_response('rosetta/pofile.html', locals(), context_instance=RequestContext(request))
+        tmpl = 'rosetta/pofile.html'
+        if rosetta_i18n_fn.endswith('singlepage.po'):
+            tmpl = 'rosetta/pofile_singlepage.html'
+
+        return render_to_response(tmpl, locals(), context_instance=RequestContext(request))
     else:
         return list_languages(request, do_session_warn=True)
 home = never_cache(home)
