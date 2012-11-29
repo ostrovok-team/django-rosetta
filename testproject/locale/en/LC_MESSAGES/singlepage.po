@@ -1,9 +1,1014 @@
-#. Приветствие
-#: MAIN_PAGE
-msgid "Привет"
-msgstr "Hello"
+#: Base
+#. Server error
+msgctxt "Base serverError"
+msgid "Ошибка сервера"
+msgstr ""
 
-#. Приветствие 2
-#: MAIN_PAGE
-msgid "Здарова"
-msgstr "Hello"
+#: Directions
+#. Используется в фразах '15 км на ...'
+msgctxt "Directions northEast"
+msgid "северо-восток"
+msgstr ""
+
+#: Directions
+#. Используется в фразах '15 км на ...'
+msgctxt "Directions northWest"
+msgid "северо-запад"
+msgstr ""
+
+#: Directions
+#. Используется в фразах '15 км на ...'
+msgctxt "Directions southEast"
+msgid "юго-восток"
+msgstr ""
+
+#: Directions
+#. Используется в фразах '15 км на ...'
+msgctxt "Directions southWest"
+msgid "юго-запад"
+msgstr ""
+
+#: Directions
+#. Используется в фразах '15 км на ...'
+msgctxt "Directions north"
+msgid "север"
+msgstr ""
+
+#: Directions
+#. Используется в фразах '15 км на ...'
+msgctxt "Directions south"
+msgid "юг"
+msgstr ""
+
+#: Directions
+#. Используется в фразах '15 км на ...'
+msgctxt "Directions east"
+msgid "восток"
+msgstr ""
+
+#: Directions
+#. Используется в фразах '15 км на ...'
+msgctxt "Directions west"
+msgid "запад"
+msgstr ""
+
+#: helpers.header.contact.International
+#. Блок с телефонами в шапке
+msgctxt "helpers.header.contact.International freeNumber"
+msgid "бесплатный<br>номер"
+msgstr ""
+
+#: helpers.header.contact.International
+#. Блок с телефонами в шапке
+msgctxt "helpers.header.contact.International back"
+msgid "назад"
+msgstr ""
+
+#: helpers.header.contact.Local
+#. Блок с телефонами в шапке
+msgctxt "helpers.header.contact.Local fromMoscow"
+msgid "из Москвы"
+msgstr ""
+
+#: helpers.header.contact.Local
+#. Блок с телефонами в шапке
+msgctxt "helpers.header.contact.Local fromStPetersburg"
+msgid "из Санкт-Петербурга"
+msgstr ""
+
+#: helpers.header.contact.Local
+#. Блок с телефонами в шапке
+msgctxt "helpers.header.contact.Local fromRussia"
+msgid "по России"
+msgstr ""
+
+#: helpers.header.contact.Local
+#. Блок с телефонами в шапке
+msgctxt "helpers.header.contact.Local fromAbroad"
+msgid "Звонки из других стран"
+msgstr ""
+
+#: helpers.Footer
+#. Футер
+msgctxt "helpers.Footer whoWeAre"
+msgid "Кто мы"
+msgstr ""
+
+#: helpers.Footer
+#. Футер
+msgctxt "helpers.Footer contacts"
+msgid "Контакты"
+msgstr ""
+
+#: helpers.Footer
+#. Футер
+msgctxt "helpers.Footer vacancies"
+msgid "Вакансии"
+msgstr ""
+
+#: helpers.Footer
+#. Футер
+msgctxt "helpers.Footer press"
+msgid "Пресса о нас"
+msgstr ""
+
+#: helpers.Footer
+#. Футер
+msgctxt "helpers.Footer feedback"
+msgid "Обратная связь"
+msgstr ""
+
+#: helpers.Footer
+#. Футер
+msgctxt "helpers.Footer partnership"
+msgid "Партнерство с отелями"
+msgstr ""
+
+#: helpers.Footer
+#. Футер
+msgctxt "helpers.Footer destinations"
+msgid "Популярные направления"
+msgstr ""
+
+#: helpers.Footer
+#. Футер
+msgctxt "helpers.Footer mobileVersion"
+msgid "Мобильная версия"
+msgstr ""
+
+#: helpers.Footer
+#. Футер
+msgctxt "helpers.Footer social"
+msgid "Мы в социальных сетях"
+msgstr ""
+
+#: helpers.Header
+#. Шапка
+msgctxt "helpers.Header login"
+msgid "Вход"
+msgstr ""
+
+#: helpers.Header
+#. Шапка
+msgctxt "helpers.Header payment"
+msgid "Оплата и гарантия"
+msgstr ""
+
+#: helpers.Header
+#. Шапка
+msgctxt "helpers.Header about"
+msgid "О компании"
+msgstr ""
+
+#: helpers.Header
+#. Шапка
+msgctxt "helpers.Header press"
+msgid "Пресса о нас"
+msgstr ""
+
+#: helpers.Header
+#. Шапка
+msgctxt "helpers.Header history"
+msgid "История просмотров"
+msgstr ""
+
+#: helpers.Header
+#. Шапка
+msgctxt "helpers.Header myBookings"
+msgid "Мои бронирования"
+msgstr ""
+
+#: helpers.Header
+#. Шапка
+msgctxt "helpers.Header favorites"
+msgid "Любимые отели"
+msgstr ""
+
+#: helpers.Header
+#. Шапка
+msgctxt "helpers.Header favorites"
+msgid "Любимые отели"
+msgstr ""
+
+#: helpers.Header
+#. Шапка
+msgctxt "helpers.Header viewedHotels"
+msgid "История просмотров"
+msgstr ""
+
+#: helpers.Header
+#. Шапка
+msgctxt "helpers.Header searches"
+msgid "История поиска"
+msgstr ""
+
+#: helpers.Header
+#. Шапка
+msgctxt "helpers.Header mySettings"
+msgid "Настройки"
+msgstr ""
+
+#: helpers.Header
+#. Шапка
+msgctxt "helpers.Header placeholderEmail"
+msgid "эл. почта"
+msgstr ""
+
+#: helpers.Header
+#. Шапка
+msgctxt "helpers.Header placeholderPassword"
+msgid "пароль"
+msgstr ""
+
+#: helpers.Header
+#. Шапка
+msgctxt "helpers.Header register"
+msgid "Зарегистрироваться"
+msgstr ""
+
+#: helpers.Header
+#. Шапка
+msgctxt "helpers.Header registration"
+msgid "Регистрация"
+msgstr ""
+
+#: helpers.Header
+#. Шапка
+msgctxt "helpers.Header remindPassword"
+msgid "Напомнить пароль"
+msgstr ""
+
+#: helpers.Header
+#. Шапка
+msgctxt "helpers.Header signin"
+msgid "Войти"
+msgstr ""
+
+#: helpers.Header
+#. Шапка
+msgctxt "helpers.Header signout"
+msgid "Выйти"
+msgstr ""
+
+#: pages.serp.controls.Favs
+#. Кнопка favorites
+msgctxt "pages.serp.controls.Favs empty"
+msgid "Нет любимых отелей"
+msgstr ""
+
+#: pages.serp.controls.Favs
+#. Кнопка favorites
+msgctxt "pages.serp.controls.Favs opened"
+msgid "Показать все отели"
+msgstr ""
+
+#: pages.serp.controls.Favs
+#. Кнопка favorites
+msgctxt "HAS FORMATTER, pages.serp.controls.Favs closed"
+msgid ""
+"Показать <span class=\"{$cssName}\">{NUM_HOTELS}</span> {NUM_HOTELS, plural,\n"
+"    one {отель}\n"
+"    few {отеля}\n"
+"    many {отелей}\n"
+"    other {отелей}\n"
+"  }"
+msgstr ""
+
+#: pages.serp.controls.Heatmaps
+#. Кнопка для хитмапа на странице серпа
+msgctxt "pages.serp.controls.Heatmaps arts"
+msgid "туризм"
+msgstr ""
+
+#: pages.serp.controls.Heatmaps
+#. Кнопка для хитмапа на странице серпа
+msgctxt "pages.serp.controls.Heatmaps food"
+msgid "питание"
+msgstr ""
+
+#: pages.serp.controls.Heatmaps
+#. Кнопка для хитмапа на странице серпа
+msgctxt "pages.serp.controls.Heatmaps shop"
+msgid "магазины"
+msgstr ""
+
+#: pages.serp.controls.Heatmaps
+#. Кнопка для хитмапа на странице серпа
+msgctxt "pages.serp.controls.Heatmaps nightlife"
+msgid "ночная жизнь"
+msgstr ""
+
+#: pages.serp.controls.Sort
+#. Кнопка сортировки на странице серпа
+msgctxt "pages.serp.controls.Sort popular"
+msgid "Популярность"
+msgstr ""
+
+#: pages.serp.controls.Sort
+#. Кнопка сортировки на странице серпа
+msgctxt "pages.serp.controls.Sort price"
+msgid "Цена"
+msgstr ""
+
+#: pages.serp.controls.Sort
+#. Кнопка сортировки на странице серпа
+msgctxt "pages.serp.controls.Sort rating"
+msgid "Рейтинг"
+msgstr ""
+
+#: pages.serp.controls.Sort
+#. Кнопка сортировки на странице серпа
+msgctxt "pages.serp.controls.Sort destination"
+msgid "Удаленность"
+msgstr ""
+
+#: pages.serp.controls.Tabs
+#. Кнопка состояния на странице серпа
+msgctxt "pages.serp.controls.Tabs hotels"
+msgid "Отели"
+msgstr ""
+
+#: pages.serp.controls.Tabs
+#. Кнопка состояния на странице серпа
+msgctxt "pages.serp.controls.Tabs map"
+msgid "Карта"
+msgstr ""
+
+#: pages.serp.Empty
+#. Пустой серп
+msgctxt "pages.serp.Empty title"
+msgid "К сожалению, ни один отель не соответствует указанным критериям поиска :-("
+msgstr ""
+
+#: pages.serp.Empty
+#. Пустой серп
+msgctxt "pages.serp.Empty bannerTitle"
+msgid "– Звоните нам, мы подберём отель и предложим вам скидку"
+msgstr ""
+
+#: pages.serp.Empty
+#. Пустой серп
+msgctxt "pages.serp.Empty bannerNote"
+msgid "Звонок по России бесплатный"
+msgstr ""
+
+#: pages.serp.Errors
+#. Ошибка про даты из прошлого на серпе
+msgctxt "pages.serp.Errors dateInThePast"
+msgid ""
+"Похоже, что вы ввели дату заезда или выезда из\n"
+"  прошлого. К сожалению, машину времени еще не изобрели, поэтому\n"
+"  мы нашли для вас отели на ближайшие доступные даты."
+msgstr ""
+
+#: pages.serp.ErrorScreen
+#. Заголовок на странице ошибки
+msgctxt "pages.serp.ErrorScreen title"
+msgid "Запрашиваемый город не найден"
+msgstr ""
+
+#: pages.serp.ErrorScreen
+#. Текст на странице ошибки
+msgctxt "pages.serp.ErrorScreen message"
+msgid ""
+"К сожалению, мы не смогли найти в нашей базе города, в котором\n"
+"  вы ищете отели. Возможно, вы просто забыли задать город\n"
+"  в условиях поиска. В этом случае в адресной строке у вас нет\n"
+"  параметра q или он пуст. Воспользуйтесь формой сверху, чтобы\n"
+"  указать нужный вам город."
+msgstr ""
+
+#: pages.serp.filters.Distance
+#. Заголовок фильтра по дистанции
+msgctxt "pages.serp.filters.Distance title"
+msgid "Расположение"
+msgstr ""
+
+#: pages.serp.filters.Distance
+#. Текст в фильтре по дистанции
+msgctxt "pages.serp.filters.Distance from"
+msgid "км от центра"
+msgstr ""
+
+#: pages.serp.filters.Price
+#. Фильтр цены на серпе
+msgctxt "HAS FORMATTER, pages.serp.filters.Price title"
+msgid ""
+"Стоимость за {NIGHTS, plural,\n"
+"    one {ночь}\n"
+"    few {{NIGHTS} ночи}\n"
+"    many {{NIGHTS} ночей}\n"
+"    other {{NIGHTS} ночей}\n"
+"  }"
+msgstr ""
+
+#: pages.serp.filters.Price
+#. Фильтр цены на серпе
+msgctxt "pages.serp.filters.Price payment"
+msgid "Оплата"
+msgstr ""
+
+#: pages.serp.filters.Price
+#. Фильтр цены на серпе
+msgctxt "pages.serp.filters.Price prepay"
+msgid "до заезда"
+msgstr ""
+
+#: pages.serp.filters.Price
+#. Фильтр цены на серпе
+msgctxt "pages.serp.filters.Price postpay"
+msgid "в отеле"
+msgstr ""
+
+#: pages.serp.filters.Rating
+#. Фильтр по рейтингу на серпе
+msgctxt "pages.serp.filters.Rating title"
+msgid "Оценка гостей"
+msgstr ""
+
+#: pages.serp.filters.Rating
+#. Фильтр по рейтингу на серпе
+msgctxt "HAS FORMATTER, pages.serp.filters.Rating indicator"
+msgid ""
+"{RATING, plural,\n"
+"    =1 {<span class=\"{$cssName}\">любая</span>}\n"
+"    =10 {<span class=\"{$cssName}\">{RATING}</span>}\n"
+"    few {<span class=\"{$cssName}\">{RATING}</span> и выше}\n"
+"    many {<span class=\"{$cssName}\">{RATING}</span> и выше}\n"
+"    other {<span class=\"{$cssName}\">{RATING}</span> и выше}\n"
+"  }"
+msgstr ""
+
+#: pages.serp.filters.Stars
+#. Фильтр по звездам на серпе
+msgctxt "pages.serp.filters.Stars title"
+msgid "Количество звёзд"
+msgstr ""
+
+#: pages.serp.header.info.Title
+#. Шапка серпа
+msgctxt "HAS FORMATTER, pages.serp.header.info.Title region"
+msgid "Отели {$nameIn}, {$countryName}"
+msgstr ""
+
+#: pages.serp.header.info.Title
+#. Шапка серпа
+msgctxt "HAS FORMATTER, pages.serp.header.info.Title regionSimple"
+msgid "Отели в {$name}"
+msgstr ""
+
+#: pages.serp.header.info.Title
+#. Шапка серпа
+msgctxt "HAS FORMATTER, pages.serp.header.info.Title regionUnknown"
+msgid "Неизвестный город"
+msgstr ""
+
+#: pages.serp.header.info.Title
+#. Шапка серпа
+msgctxt "HAS FORMATTER, pages.serp.header.info.Title change"
+msgid "Изменить условия"
+msgstr ""
+
+#: pages.serp.header.info.Title
+#. Шапка серпа
+msgctxt "HAS FORMATTER, pages.serp.header.info.Title details"
+msgid ""
+"{GUESTS, select,\n"
+"    all {\n"
+"      для {NUM_ADULTS} {NUM_ADULTS, plural,\n"
+"        one {взрослого}\n"
+"        few {взрослых}\n"
+"        many {взрослых}\n"
+"        other {взрослых}\n"
+"      } и {NUM_CHILDREN} {NUM_CHILDREN, plural,\n"
+"        one {ребенка}\n"
+"        few {детей}\n"
+"        many {детей}\n"
+"        other {детей}\n"
+"      }\n"
+"    }\n"
+"    adults {\n"
+"      для {NUM_ADULTS} {NUM_ADULTS, plural,\n"
+"        one {взрослого}\n"
+"        few {взрослых}\n"
+"        many {взрослых}\n"
+"        other {взрослых}\n"
+"      }\n"
+"    }\n"
+"    children {\n"
+"      для {NUM_CHILDREN} {NUM_CHILDREN, plural,\n"
+"        one {ребенка}\n"
+"        few {детей}\n"
+"        many {детей}\n"
+"        other {детей}\n"
+"      }\n"
+"    }\n"
+"    other {}\n"
+"  }\n"
+"  <% @space %>\n"
+"  {IS_DATELESS, select,\n"
+"    no {\n"
+"      с {NUM_FROM_DATE} {IS_SAME_MONTH, select,\n"
+"        no {{NUM_FROM_MONTH}}\n"
+"        other {}\n"
+"      }  по {NUM_TO_DATE} {NUM_TO_MONTH}\n"
+"    }\n"
+"    other {}\n"
+"  }"
+msgstr ""
+
+#: pages.serp.Hotel
+#. Отель на странице серпа
+msgctxt "pages.serp.Hotel from"
+msgid "от"
+msgstr ""
+
+#: pages.serp.Hotel
+#. Отель на странице серпа
+msgctxt "pages.serp.Hotel unknownPrice"
+msgid "цена неизвестна"
+msgstr ""
+
+#: pages.serp.Hotel
+#. Отель на странице серпа
+msgctxt "pages.serp.Hotel book"
+msgid "Забронировать"
+msgstr ""
+
+#: pages.serp.Hotel
+#. Отель на странице серпа
+msgctxt "pages.serp.Hotel postpay"
+msgid "Оплата в отеле"
+msgstr ""
+
+#: pages.serp.Hotel
+#. Отель на странице серпа
+msgctxt "pages.serp.Hotel nonPostpay"
+msgid "Оплата до заезда в отель"
+msgstr ""
+
+#: pages.serp.Hotel
+#. Отель на странице серпа
+msgctxt "HAS FORMATTER, pages.serp.Hotel leftRooms"
+msgid ""
+"{NUM_ROOMS, plural,\n"
+"    =0 {Не осталось номеров}\n"
+"    =1 {Последний шанс!<br>Остался один номер}\n"
+"    =2 {Осталось всего 2 номера}\n"
+"    one {Остался {NUM_ROOMS} номер}\n"
+"    few {Осталось {NUM_ROOMS} номера}\n"
+"    many {Осталось {NUM_ROOMS} номеров}\n"
+"    other {Осталось {NUM_ROOMS} номеров}\n"
+"  }"
+msgstr ""
+
+#: pages.serp.Hotel
+#. Отель на странице серпа
+msgctxt "HAS FORMATTER, pages.serp.Hotel perNights"
+msgid ""
+"за {NUM_NIGHTS} {NUM_NIGHTS, plural,\n"
+"    one {ночь}\n"
+"    few {ночи}\n"
+"    many {ночей}\n"
+"    other {ночей}\n"
+"  }"
+msgstr ""
+
+#: pages.serp.HotelLocation
+#. Положение отеля. Единица измерения: метры
+msgctxt "HAS FORMATTER, pages.serp.HotelLocation m"
+msgid "м."
+msgstr ""
+
+#: pages.serp.HotelLocation
+#. Положение отеля. Единица измерения: метры
+msgctxt "HAS FORMATTER, pages.serp.HotelLocation km"
+msgid "км."
+msgstr ""
+
+#: pages.serp.HotelLocation
+#. Положение отеля: НА юг
+msgctxt "HAS FORMATTER, pages.serp.HotelLocation to"
+msgid "на"
+msgstr ""
+
+#: pages.serp.HotelLocation
+#. Положение отеля: от центра
+msgctxt "HAS FORMATTER, pages.serp.HotelLocation fromCenter"
+msgid "от <span class=\"{$cssClass}\">центра</span>"
+msgstr ""
+
+#: pages.serp.HotelLocation
+#. Положение отеля: от ул. Победы
+msgctxt "HAS FORMATTER, pages.serp.HotelLocation fromAddress"
+msgid "от <span class=\"{$cssClass}\">{$address}</span>"
+msgstr ""
+
+#: pages.serp.Hotels
+#. Список отелей на серпе
+msgctxt "pages.serp.Hotels goTop"
+msgid "вернуться наверх ↑"
+msgstr ""
+
+#: pages.serp.Hotels
+#. Список отелей на серпе
+msgctxt "HAS FORMATTER, pages.serp.Hotels number"
+msgid ""
+"{NUM_HOTELS, plural,\n"
+"    one {Показан {NUM_HOTELS} отель из {NUM_HOTELS_TOTAL}}\n"
+"    few {Показано {NUM_HOTELS} отеля из {NUM_HOTELS_TOTAL}}\n"
+"    many {Показано {NUM_HOTELS} отелей из {NUM_HOTELS_TOTAL}}\n"
+"    other {Показано {NUM_HOTELS} отелей из {NUM_HOTELS_TOTAL}}\n"
+"  }"
+msgstr ""
+
+#: pages.serp.Hotels
+#. Список отелей на серпе
+msgctxt "HAS FORMATTER, pages.serp.Hotels button"
+msgid ""
+"Показать еще {NUM_HOTELS} {NUM_HOTELS, plural,\n"
+"    one {отель}\n"
+"    few {отеля}\n"
+"    many {отелей}\n"
+"    other {отелей}\n"
+"  }"
+msgstr ""
+
+#: pages.serp.HotelsEmpty
+#. Не найдено ни одного отеля
+msgctxt "HAS FORMATTER, pages.serp.HotelsEmpty noHotels"
+msgid ""
+"Ни один из {NUM_HOTELS} {NUM_HOTELS, plural,\n"
+"    one {отеля}\n"
+"    few {отелей}\n"
+"    many {отелей}\n"
+"    other {отелей}\n"
+"  } не подходит  под ваши строгие требования :-)"
+msgstr ""
+
+#: pages.serp.HotelsEmpty
+#. Не найдено ни одного отеля
+msgctxt "pages.serp.HotelsEmpty changeRequest"
+msgid "Попробуйте отказаться от одного из условий поиска или посмотрите <span class=\"{$cssName}\">все отели {$into}</span>"
+msgstr ""
+
+#: pages.serp.Loading
+#. Загрузка серпа
+msgctxt "HAS FORMATTER, pages.serp.Loading wait"
+msgid ""
+"…ещё {SECONDS, plural,\n"
+"    one {секунда}\n"
+"    few {секунды}\n"
+"    many {секунд}\n"
+"    other {секунд}\n"
+"  } {SECONDS}, оставайтесь с нами ;)"
+msgstr ""
+
+#: pages.Serp
+#. Заголовок строаницы серпа
+msgctxt "HAS FORMATTER, pages.Serp title"
+msgid ""
+"{NAME}{IS_DATELESS, select,\n"
+"    no {\n"
+"      , {IS_SAME_MONTH, select,\n"
+"        no {с {NUM_FROM_DATE} {NUM_FROM_MONTH} по {NUM_TO_DATE}}\n"
+"        other {{NUM_FROM_DATE}–{NUM_TO_DATE}}\n"
+"      } {NUM_TO_MONTH}\n"
+"    }\n"
+"    other {}\n"
+"  }"
+msgstr ""
+
+#: pages.Serp
+#. Заголовок строаницы серпа (fallback)
+msgctxt "pages.Serp titleFallback"
+msgid "Отели"
+msgstr ""
+
+#: pages.welcome.Advanages
+msgctxt "pages.welcome.Advanages bannerTitle"
+msgid "Позвоните нам —"
+msgstr ""
+
+#: pages.welcome.Advanages
+msgctxt "pages.welcome.Advanages bannerText"
+msgid "поможем забронировать отель по телефону"
+msgstr ""
+
+#: pages.welcome.Advanages
+msgctxt "pages.welcome.Advanages priceLink"
+msgid "Гарантируем лучшие цены"
+msgstr ""
+
+#: pages.welcome.Advanages
+msgctxt "pages.welcome.Advanages priceDesc"
+msgid "Вернем тройную разницу, если найдете дешевле"
+msgstr ""
+
+#: pages.welcome.Advanages
+msgctxt "pages.welcome.Advanages feature24Name"
+msgid "Круглосуточная поддержка"
+msgstr ""
+
+#: pages.welcome.Advanages
+msgctxt "pages.welcome.Advanages feature24Desc"
+msgid "Звоните бесплатно из любой страны"
+msgstr ""
+
+#: pages.welcome.Advanages
+msgctxt "pages.welcome.Advanages featurePayemntsName"
+msgid "Платите как вам удобно"
+msgstr ""
+
+#: pages.welcome.Advanages
+msgctxt "pages.welcome.Advanages featurePayemntsDesc"
+msgid "Картой или наличными"
+msgstr ""
+
+#: pages.welcome.Blog
+#. Заголовок блока с блогом островка на морде
+msgctxt "pages.welcome.Blog header"
+msgid "Блог Островка"
+msgstr ""
+
+#: pages.welcome.Booking
+#. Текст про бронирование на морде. Заголовок
+msgctxt "pages.welcome.Booking title"
+msgid "Онлайн бронирование отелей"
+msgstr ""
+
+#: pages.welcome.Booking
+#. Текст про бронирование на морде. Левая колонка
+msgctxt "pages.welcome.Booking left"
+msgid "<p class=\"{$cssClass}\">Почему бронирование отелей онлайн удобнее? Во-первых, Островок предоставляет вам отличный сервис по бронированию гостиниц. Мы делаем все,  чтобы выбор отеля проходил быстро и легко. Наш отдел по работе с клиентами круглосуточно предоставляет всю необходимую информацию о гостиницах и помогает в решении любых вопросов, связанных с бронированием отелей. Во-вторых, <strong class=\"{$strongCssClass}\">в нашей базе более 130 тысяч отелей в 200 странах мира</strong>. Вы с легкостью сможете выбрать и забронировать отель всего за пару минут и несколько кликов.</p>"
+msgstr ""
+
+#: pages.welcome.Booking
+#. Текст про бронирование на морде. Правая колонка
+msgctxt "pages.welcome.Booking right"
+msgid ""
+"<p class=\"{$cssClass}\">Чем мы руководствуемся при бронировании отеля, помимо звездности и расположения? Конечно, стоимостью гостиницы. Островок <a class=\"{$externalCssClass}\" href=\"{$bestPrice}\">гарантирует</a> по-настоящему низкие цены на бронирование отелей. Как нам это удается? Все просто – мы не берем с клиентов комиссий и работаем по прямой договоренности с отелями, предоставляющими нам лучшие условия. С нашей помощью можете не только забронировать отель, но и получить помощь  и необходимую информацию в любой момент поездки и по возвращению из нее.</p>\n"
+"  <p class=\"{$cssClass}\">Путешествуйте с Островком и  поймете, насколько легким и приятным может быть <strong class=\"{$strongCssClass}\">бронирование отелей по всему миру</strong>!</p>"
+msgstr ""
+
+#: pages.welcome.promo.Dest
+#. Популярные направления на морде. Например: 128 отелей.
+#. plural
+msgctxt "HAS FORMATTER, pages.welcome.promo.Dest hotels"
+msgid ""
+"{NUM_HOTELS} {NUM_HOTELS, plural,\n"
+"    one {отель}\n"
+"    few {отеля}\n"
+"    many {отелей}\n"
+"    other {отелей}\n"
+"  }"
+msgstr ""
+
+#: pages.welcome.promo.Tabs
+#. Таб в промо блоке на морде
+msgctxt "pages.welcome.promo.Tabs reviews"
+msgid "Отзывы клиентов"
+msgstr ""
+
+#: pages.welcome.promo.Tabs
+#. Таб в промо блоке на морде
+msgctxt "pages.welcome.promo.Tabs press"
+msgid "Пресса об Островке"
+msgstr ""
+
+#: pages.welcome.promo.Tabs
+#. Таб в промо блоке на морде
+msgctxt "pages.welcome.promo.Tabs destinations"
+msgid "Популярные направления"
+msgstr ""
+
+#: pages.Welcome
+#. Заголовок страницы на морде
+msgctxt "pages.Welcome title"
+msgid "Островок — бронирование отелей и гостиниц по всему миру"
+msgstr ""
+
+#: Validation
+#. Валидация форм
+msgctxt "Validation emailIncorrect"
+msgid "Неверный формат электронной почты"
+msgstr ""
+
+#: Validation
+#. Валидация форм
+msgctxt "Validation numberIncorrect"
+msgid "Введите число"
+msgstr ""
+
+#: Validation
+#. Валидация форм
+msgctxt "Validation numberGreater"
+msgid "Введите число большее либо равное {$min}"
+msgstr ""
+
+#: Validation
+#. Валидация форм
+msgctxt "Validation numberLess"
+msgid "Введите число меньшее либо равное {$max}"
+msgstr ""
+
+#: Validation
+#. Валидация форм
+msgctxt "Validation numberBetween"
+msgid "Введите число из диапазона от {$min} до {$max}"
+msgstr ""
+
+#: Validation
+#. Валидация форм
+msgctxt "Validation sizeGreater"
+msgid "Длина строки должна быть больше либо равна {$min}"
+msgstr ""
+
+#: Validation
+#. Валидация форм
+msgctxt "Validation sizeLess"
+msgid "Длина строки должна быть меньше либо равна {$max}"
+msgstr ""
+
+#: Validation
+#. Валидация форм
+msgctxt "Validation sizeBetween"
+msgid "Длина строки должна быть в диапазоне от {$min} до {$max}"
+msgstr ""
+
+#: Validation
+#. Валидация форм
+msgctxt "Validation required"
+msgid "Заполните поле"
+msgstr ""
+
+#: widgets.Counter
+#. Текст в лэйбле счетчика отелей
+msgctxt "widgets.Counter found"
+msgid "найдено отелей"
+msgstr ""
+
+#: widgets.Giantform
+#. Форма поиска на морде
+msgctxt "widgets.Giantform destLabel"
+msgid "Куда вы хотите отправиться? <span class=\"{$cssName}\">{$city}</span>, например."
+msgstr ""
+
+#: widgets.Giantform
+#. Форма поиска на морде
+msgctxt "widgets.Giantform age"
+msgid "полный возраст"
+msgstr ""
+
+#: widgets.Giantform
+#. Форма поиска на морде
+msgctxt "widgets.Giantform header"
+msgid "Поиск отелей"
+msgstr ""
+
+#: widgets.Giantform
+#. Форма поиска на морде
+msgctxt "widgets.Giantform submit"
+msgid "Найти отели"
+msgstr ""
+
+#: widgets.Giantform
+#. Форма поиска на морде
+msgctxt "widgets.Giantform and"
+msgid "и"
+msgstr ""
+
+#: widgets.Giantform
+#. Форма поиска на морде
+msgctxt "widgets.Giantform children"
+msgid "Детей"
+msgstr ""
+
+#: widgets.Giantform
+#. Форма поиска на морде
+msgctxt "widgets.Giantform adults"
+msgid "Взрослых"
+msgstr ""
+
+#: widgets.Giantform
+#. Форма поиска на морде
+msgctxt "widgets.Giantform checkIn"
+msgid "Заезд"
+msgstr ""
+
+#: widgets.Giantform
+#. Форма поиска на морде
+msgctxt "widgets.Giantform checkout"
+msgid "Выезд"
+msgstr ""
+
+#: widgets.Giantform
+#. Форма поиска на морде
+msgctxt "widgets.Giantform destPhaceholder"
+msgid "Город или отель"
+msgstr ""
+
+#: widgets.GiantformSerp
+#. Форма поиска на серпе
+msgctxt "widgets.GiantformSerp destTitle"
+msgid "Город или страна"
+msgstr ""
+
+#: widgets.GiantformSerp
+#. Форма поиска на серпе
+msgctxt "widgets.GiantformSerp datesTitle"
+msgid "Даты заезда и выезда"
+msgstr ""
+
+#: widgets.GiantformSerp
+#. Форма поиска на серпе
+msgctxt "widgets.GiantformSerp datesUndefined"
+msgid "не знаю"
+msgstr ""
+
+#: widgets.GiantformSerp
+#. Форма поиска на серпе
+msgctxt "widgets.GiantformSerp children"
+msgid "дети"
+msgstr ""
+
+#: widgets.GiantformSerp
+#. Форма поиска на серпе
+msgctxt "widgets.GiantformSerp adults"
+msgid "взрослые"
+msgstr ""
+
+#: widgets.GiantformSerp
+#. Форма поиска на серпе
+msgctxt "widgets.GiantformSerp age"
+msgid "полный возраст"
+msgstr ""
+
+#: widgets.GiantformSerp
+#. Форма поиска на серпе
+msgctxt "widgets.GiantformSerp goBack"
+msgid "вернуть<br>условия"
+msgstr ""
+
+#: widgets.GiantformSerp
+#. Форма поиска на серпе
+msgctxt "widgets.GiantformSerp submit"
+msgid "Найти отели"
+msgstr ""
+
+#: widgets.mailer.Success
+#. Заголовок успешной подписки
+msgctxt "widgets.mailer.Success title"
+msgid "Ура!"
+msgstr ""
+
+#: widgets.mailer.Success
+#. Текст об успешной подписке
+msgctxt "widgets.mailer.Success text"
+msgid ""
+"Вы только что подписались на рассылку,\n"
+"  <br>и мы выслали вам промо-код\n"
+"  <br>для получения скидки!"
+msgstr ""
+
+#: widgets.Mailer
+#. Форма рассылки на морде
+msgctxt "widgets.Mailer email"
+msgid "Введите ваш e-mail"
+msgstr ""
+
+#: widgets.Mailer
+#. Форма рассылки на морде
+msgctxt "widgets.Mailer header"
+msgid "Рассылка Островка"
+msgstr ""
+
+#: widgets.Mailer
+#. Форма рассылки на морде
+msgctxt "widgets.Mailer subscribe"
+msgid "Подписаться"
+msgstr ""
+
+#: widgets.Mailer
+#. Форма рассылки на морде
+msgctxt "widgets.Mailer tip"
+msgid "Подпишитесь прямо сейчас и получите<br>бонус в 1000 рублей на бронирование отеля."
+msgstr ""
+
+#: widgets.Navigation
+#. Навигация
+msgctxt "widgets.Navigation serp"
+msgid "Серп"
+msgstr ""
+
+#: widgets.Suggest
+#. Автокомплит
+msgctxt "widgets.Suggest regions"
+msgid "Регионы"
+msgstr ""
+
+#: widgets.Suggest
+#. Автокомплит
+msgctxt "widgets.Suggest hotels"
+msgid "Отели"
+msgstr ""

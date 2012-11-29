@@ -18,6 +18,8 @@
         {% include 'rosetta/js/rosetta.js' %}
     //-->
     </script>
+    
+    {% block head_extra %}{% endblock %}
 </head>
 <body>
     <div id="container">
@@ -36,5 +38,6 @@
             <a href="https://github.com/mbi/django-rosetta">Rosetta</a> <span class="version">{{version}}</span>
         </div>
     </div>
+    {% block body_end %}{% endblock %}
 </body>
 </html>

@@ -1,0 +1,28 @@
+{
+  "id": "gcinui",
+	"paths": ["js"],
+	"mode": "SIMPLE",
+	"level": "VERBOSE",
+
+	"checks": {
+	  "checkRegExp": "ERROR",
+	  "checkTypes": "ERROR",
+	  "checkVars": "ERROR",
+	  "deprecated": "ERROR",
+	  "fileoverviewTags": "ERROR",
+	  "invalidCasts": "ERROR",
+	  "missingProperties": "ERROR",
+	  "nonStandardJsDocs": "ERROR",
+	  "undefinedVars": "ERROR"
+	},
+
+	"define": {
+	  "goog.DEBUG": false
+	},
+
+	"output-wrapper": "window.gcinuiInit = function(goog){%output% delete window['gcinuiInit']};",
+	"output-charset": "utf-8",
+	
+	"inputs": "js/app.js",
+	"output-file": "gcinui.js"
+}

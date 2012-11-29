@@ -1,0 +1,30 @@
+.original .message {
+  white-space: pre-wrap;
+}
+.original .message-with-formatter {
+  white-space: pre;
+}
+
+
+th.c {
+  width: 4em;
+}
+
+td.translation {
+  width: auto;
+}
+
+td.translation textarea {
+  resize: vertical;
+}
+
+td.gcinuielper {
+width: 27em;
+}
+
+td.original .context {
+  margin-top: 0;
+  margin-bottom: 1em;
+  color: #bbb;
+  font-size: 90%;
+}

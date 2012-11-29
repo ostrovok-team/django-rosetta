@@ -1,0 +1,91 @@
+.gcinui-form {
+  padding: .5em;
+}
+.gcinui-form-fields {
+  display: inline-block;
+  margin: 0 1em 1em 0;
+  vertical-align: top;
+}
+
+.gcinui-form-param {
+  font-size: 12px;
+  padding: 0 0 .4em 0;
+}
+
+.gcinui-form-label {
+  display: inline-block;
+  font-size: 10px;
+  margin-right: 1ex;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 10em;
+}
+
+.gcinui-form-label {
+  display: inline-block;
+  font-size: 10px;
+  margin-right: 1ex;
+}
+
+.gcinui-form-input-text,
+.gcinui-form-input-number {
+  width: 14em;
+}
+
+.gcinui-form-input-number {
+  width: 4em;
+}
+
+.gcinui-form-result {
+  background: #eee;
+  border: solid 1px #ddd;
+  display: inline-block;
+  font-size: 14px;
+  max-width: 40em;
+  padding: .5em;
+  vertical-align: top;
+}
+
+.gcinui-form-error {
+  color: red;
+  font-weight: bold;
+}
+
+.gcinui-form-textarea {
+  margin-bottom: .5em !important;
+}
+
+.gcinui-form-prettify {
+  display: inline-block;
+  cursor: pointer;
+  -moz-box-shadow: 0px 1px 0px 0px #d9d9d9;
+  -webkit-box-shadow: 0px 1px 0px 0px #d9d9d9;
+  box-shadow: 0px 1px 0px 0px #d9d9d9;
+  background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e0e0e0), color-stop(1, #a1a3a3) );
+  background: -moz-linear-gradient( center top, #e0e0e0 5%, #a1a3a3 100% );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e0e0', endColorstr='#a1a3a3');
+  background-color: #e0e0e0;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #6b6b6b;
+  display: inline-block;
+  color: #665a66;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 .5em .5em 0;
+  padding: 7px 6px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #d6d6d6;
+}
+
+.gcinui-form-prettify:hover {
+  color: rgb(67, 142, 177);
+  background: rgb(205, 225, 233);
+  border-color: rgb(67, 142, 177);
+}
+
+.gcinui-form-hidden {
+  display: none;
+}

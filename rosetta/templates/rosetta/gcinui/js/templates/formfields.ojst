@@ -1,0 +1,34 @@
+<% @require ojster %>
+<% @require goog.array %>
+
+<% @template gcinui.templates.FormFields %>
+<% @inherits ojster.Template %>
+
+<% @block main { %>
+<% goog.array.forEach(d.replacements, function(param) { %>
+  <div class="<% @css +param %>">
+    <label>
+      <span class="<% @css +label %>">$<%=param%></span>
+        <input class="<% @css +input-text %>" name="$<%-param%>" type="text" value="<%-d.values['$' + param] || '$$$' + param + '$$$'%>">
+    </label>
+  </div>
+<% });%>
+<% goog.array.forEach(d.params, function(param) { %>
+  <div class="<% @css +param %>">
+    <label>
+      <span class="<% @css +label %>"><%=param.value%></span>
+      <% if (param.type == 'simple') { %>
+        <input class="<% @css +input-text %>" name="<%-param.value%>" type="text" value="<%-d.values[param.value] || '{' + param.value + '}'%>">
+      <% } else if (param.type == 'plural') { %>
+        <input class="<% @css +input-number %>" min="0" name="<%-param.value%>" type="number" value="<%-d.values[param.value] || '0'%>">
+      <% } else if (param.type == 'select') { %>
+        <select class="<% @css +secect %>" name="<%-param.value%>">
+          <% goog.array.forEach(param.variants, function(variant) { %>
+            <option<%-d.values[param.value] == variant ? ' selected' : ''%>><%=variant%></option>
+          <% });%>
+        </select>
+      <% } %>
+    </label>
+  </div>
+<% });%>
+<% @block main } %>

@@ -59,6 +59,7 @@
         </div>
 
         <form method="post" action="">
+            {% block msg_table %}
             <table>
                 <thead>
                     <tr>
@@ -131,6 +132,7 @@
                     {% endfor %}
                 </tbody>
             </table>
+            {% endblock %}
             <div class="submit-row">
                 <p class="paginator">
                     {% if query %}

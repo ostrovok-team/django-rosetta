@@ -1,0 +1,13 @@
+<% @require ojster %>
+<% @require goog.array %>
+
+<% @template gcinui.templates.Form %>
+<% @inherits ojster.Template %>
+
+<% @block main { %>
+<form class="<% @css %>">
+  <div><span class="<% @css +prettify %> <% @css +hidden %>">Отформатировать</span></div>
+  <div class="<% @css +fields %>"></div>
+  <div class="<% @css +result %> <% @css +hidden %>"></div>
+</form>
+<% @block main } %>
