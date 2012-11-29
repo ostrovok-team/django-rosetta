@@ -1,10 +1,10 @@
 .gcinui-form {
-  padding: .5em;
+  margin: 0;
+  padding: 0;
 }
 .gcinui-form-fields {
-  display: inline-block;
-  margin: 0 1em 1em 0;
-  vertical-align: top;
+  display: block;
+  margin: 0 1em 2px 0;
 }
 
 .gcinui-form-param {
@@ -40,7 +40,7 @@
   background: #eee;
   border: solid 1px #ddd;
   display: inline-block;
-  font-size: 14px;
+  font-size: 12px;
   max-width: 40em;
   padding: .5em;
   vertical-align: top;
@@ -55,35 +55,79 @@
   margin-bottom: .5em !important;
 }
 
-.gcinui-form-prettify {
-  display: inline-block;
-  cursor: pointer;
-  -moz-box-shadow: 0px 1px 0px 0px #d9d9d9;
-  -webkit-box-shadow: 0px 1px 0px 0px #d9d9d9;
-  box-shadow: 0px 1px 0px 0px #d9d9d9;
-  background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e0e0e0), color-stop(1, #a1a3a3) );
-  background: -moz-linear-gradient( center top, #e0e0e0 5%, #a1a3a3 100% );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e0e0', endColorstr='#a1a3a3');
-  background-color: #e0e0e0;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  border: 1px solid #6b6b6b;
-  display: inline-block;
-  color: #665a66;
-  font-family: Arial;
-  font-size: 12px;
-  font-weight: bold;
-  margin: 0 .5em .5em 0;
-  padding: 7px 6px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #d6d6d6;
+.gcinui-form-buttons {
+  position: absolute;
+  margin-top: -21px;
 }
 
-.gcinui-form-prettify:hover {
-  color: rgb(67, 142, 177);
-  background: rgb(205, 225, 233);
-  border-color: rgb(67, 142, 177);
+.gcinui-form-prettify,
+.gcinui-form-copy {
+  background-color: #e9edef;
+  background-image: -webkit-linear-gradient(top, #eef1f3, #e5e9ec);
+  background-image:    -moz-linear-gradient(top, #eef1f3, #e5e9ec);
+  background-image:     -ms-linear-gradient(top, #eef1f3, #e5e9ec);
+  background-image:      -o-linear-gradient(top, #eef1f3, #e5e9ec);
+  background-image:         linear-gradient(top, #eef1f3, #e5e9ec);
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(186, 197, 203, .58), inset 0 0 0 1px rgba(255, 255, 255, .6);
+  cursor: pointer;
+  display: inline-block;
+  height: 19px;
+  position: relative;
+}
+
+.gcinui-form-prettify:hover,
+.gcinui-form-copy:hover {
+  box-shadow: 0 0 0 1px rgba(186, 197, 203, 1), inset 0 0 0 1px #fff;
+}
+
+.gcinui-form-prettify:active,
+.gcinui-form-copy:active {
+  background-color: #ccd4d9;
+  background-image: -webkit-linear-gradient(top, #bac6ce, #dee4e8);
+  background-image:    -moz-linear-gradient(top, #bac6ce, #dee4e8);
+  background-image:     -ms-linear-gradient(top, #bac6ce, #dee4e8);
+  background-image:      -o-linear-gradient(top, #bac6ce, #dee4e8);
+  background-image:         linear-gradient(top, #bac6ce, #dee4e8);
+  box-shadow: inset 0 0 3px 0 rgba(108, 118, 124, .56), inset 0 1px 3px 0 #6c767c;
+}
+
+.gcinui-form-copy {
+  width: 60px;
+}
+
+.gcinui-form-prettify:before,
+.gcinui-form-copy:before {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAbCAYAAADVq2dMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAkNJREFUeNrsWL9Lw0AUvivSXal0FkEFF3dBi0sHHSwu4h/QSdeKYDtUhHbQpVM7i4uCu3RxE5fq7tTFWSkIVTm/9BLz6y6XS5Mo0gfXNpfk3o/ve+/dle5XjhnxCcUQTJvSap5QElIODqtYjmax3ArWfPDqaTXr3uclip02Wer5NWWMkSRl5AQ3wFB0iXGE0efa4USjPraOKe652zP/dXQkPOvswfASLs8x14BfA4HTTM4IsV2xIeFSjgjzwPtpSXGPcTse8VFAQF5jQkLCQkOhwBgREjJ0OJ3s8GG9IdYDEuQUQ4GEKjd4wNLJCY6MoegGo4Lx7HCexIeEgwKoGDRWTxjL4rOAcaeqfD4kePIH2pM4EmlIhvwD4XT6oZKolFHHN5/Ta3Y141U0O4ZmR0I0uxpz6w3iEbfboFM5gvMdncSG0xkY9wWNaHbUbHZMltja9lDxtkNU1mxkdBLfVWLp6LV3RA8lljYwNfA6EVxiqZAdsSFhK1fRgFpMeILudUGzi4CEpZwx4u+44ghIcqKsQKRtNtDPhfm57u7O9kVuZvoKU0O9DSAVbjsSzwkz+iw/m+uVtorXy0uLXVz3cO8jjpxAdaq1vZ7pb/CUki1tFs821lZv8fseOt9klLMQc7JBZY8MiU7MThj9KI/xEuJZbXsmHfuvSECfkB8HLY4m3e1DOzEmnRKtbJGcsPctwcdBUTSD63u0bp8WElFQSRqJqvrvG8khxX+40ur2EyT81SnEcVCeQ4l0+1+pTp20nfgWYACcGjhlnhHiswAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  content: '';
+  display: block;
+  height: 8px;
+  left: 5px;
+  position: absolute;
+  top: 6px;
+}
+
+.gcinui-form-copy:before {
+  background-position: 0 0;
+  width: 49px;
+}
+
+.gcinui-form-copy:active:before {
+  background-position: 0 -9px;
+}
+
+.gcinui-form-prettify {
+  width: 24px;
+}
+
+.gcinui-form-prettify:before {
+  background-position: 0 -19px;
+  width: 13px;
+}
+
+.gcinui-form-prettify:active:before {
+  background-position: -15px -19px;
 }
 
 .gcinui-form-hidden {

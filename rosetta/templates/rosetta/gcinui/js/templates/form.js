@@ -23,11 +23,15 @@ gcinui.templates.Form.prototype.renderBlockMain = function() { // @7:1
 	self.writer.write(
 		'<form class="',
 		self.baseCssName, // @8:14
-		'"><div><span class="',
-		goog.getCssName(/** @type {string} */ (self.baseCssName), 'prettify'), // @9:21
+		'"><div class="',
+		goog.getCssName(/** @type {string} */ (self.baseCssName), 'buttons'), // @9:15
+		'"><span class="',
+		goog.getCssName(/** @type {string} */ (self.baseCssName), 'copy'), // @9:49
+		'"></span> <span class="',
+		goog.getCssName(/** @type {string} */ (self.baseCssName), 'prettify'), // @9:88
 		' ',
-		goog.getCssName(/** @type {string} */ (self.baseCssName), 'hidden'), // @9:42
-		'">Отформатировать</span></div><div class="',
+		goog.getCssName(/** @type {string} */ (self.baseCssName), 'hidden'), // @9:109
+		'"></span></div><div class="',
 		goog.getCssName(/** @type {string} */ (self.baseCssName), 'fields'), // @10:15
 		'"></div><div class="',
 		goog.getCssName(/** @type {string} */ (self.baseCssName), 'result'), // @11:15

@@ -6,7 +6,7 @@
 
 <% @block main { %>
 <form class="<% @css %>">
-  <div><span class="<% @css +prettify %> <% @css +hidden %>">Отформатировать</span></div>
+  <div class="<% @css +buttons %>"><span class="<% @css +copy %>"></span> <span class="<% @css +prettify %> <% @css +hidden %>"></span></div>
   <div class="<% @css +fields %>"></div>
   <div class="<% @css +result %> <% @css +hidden %>"></div>
 </form>

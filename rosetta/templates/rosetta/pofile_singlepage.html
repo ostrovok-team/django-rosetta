@@ -47,6 +47,21 @@
         </thead>
         <tbody>
             {% for message in rosetta_messages %}
+            <tr class="msgrow-head {% cycle row1,row2 %}">
+                <td>
+                {% if message.msgctxt %}
+                    <div class="context">
+                        {% if message.comment %}
+                        <div class="context-comment">{{message.comment|safe}}</div>
+                        {% endif %}
+                        {{message.msgctxt|safe}}
+                    </div>
+                {% endif %}
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
             <tr class="msgrow {% cycle row1,row2 %}">
                 {% if message.msgid_plural %}
                     <td class="original plural">
@@ -76,15 +91,6 @@
                     </td>
                 {% else %}
                     <td class="original">
-                    {% if message.msgctxt %}
-                        <span class="context">
-                            {% if message.comment %}
-                            {{message.comment|safe}}<br/>
-                            {% endif %}
-                            {{message.msgctxt|safe}}
-                        </span>
-                    {% endif %}
-
                     {% with message.msgctxt|slice:":13" as has_formatter %}
                         {% if has_formatter == "HAS FORMATTER" %}
                             <span class="message message-with-formatter">{{ message.msgid|format_message }}</span>
@@ -92,10 +98,10 @@
                             <span class="message">{{ message.msgid|format_message }}</span>
                         {% endif %}
                     {% endwith %}
-
                     </td>
                     {% if main_language %}<td class="original">{{ message.main_lang|format_message|linebreaksbr }}</td>{% endif %}
                     <td class="translation">
+                        <div class="translation-buttons"></div>
                         <textarea class="textarea-translation" rows="{{message.msgid|format_message|lines_count}}" cols="40" name="m_{{message.md5hash}}" tabindex="{% increment tab_idx %}">{{message.msgstr}}</textarea>
                         {% if ENABLE_TRANSLATION_SUGGESTIONS %}<a href="#" class="suggest">{% trans "suggest" %}</a>{% endif %}
                     </td>

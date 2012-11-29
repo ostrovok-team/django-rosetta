@@ -22,9 +22,19 @@ td.gcinuielper {
 width: 27em;
 }
 
-td.original .context {
-  margin-top: 0;
-  margin-bottom: 1em;
+.context {
+  margin-top: 1em;
   color: #bbb;
   font-size: 90%;
+}
+
+.msgrow-head td {
+  border-bottom: none;
+}
+
+.context-comment {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: .2em;
 }

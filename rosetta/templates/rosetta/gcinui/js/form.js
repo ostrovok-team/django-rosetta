@@ -11,14 +11,16 @@ goog.require('gcinui.templates.Form');
 goog.require('gcinui.templates.FormFields');
 
 /**
+ * @param {string} origMessage
  * @param {Element} textarea
  * @param {boolean} hasFormatter
  * @constructor
  * @extends {goog.ui.Component}
  */
-gcinui.Form = function(textarea, hasFormatter) {
+gcinui.Form = function(origMessage, textarea, hasFormatter) {
   goog.base(this);
   this._data = {};
+  this._origMessage = origMessage;
   this._hasFormatter= !!hasFormatter;
   this.setTextarea(textarea);
 };
@@ -44,6 +46,12 @@ gcinui.Form.CSS_NAME = goog.getCssName('gcinui-form');
 gcinui.Form.prototype._textarea = null;
 
 /**
+ * @type {string}
+ * @private
+ */
+gcinui.Form.prototype._origMessage = '';
+
+/**
  * @type {boolean}
  * @private
  */
@@ -53,7 +61,7 @@ gcinui.Form.prototype._hasFormatter = false;
  * @type {Element?}
  * @private
  */
-gcinui.Form.prototype._prettifyParent = null;
+gcinui.Form.prototype._buttonsParent = null;
 
 /**
  * @type {Element?}
@@ -92,9 +100,13 @@ gcinui.Form.prototype.createDom = function() {
       goog.getCssName(gcinui.Form.CSS_NAME, 'fields'), element);
   this._prettify = goog.dom.getElementByClass(
       goog.getCssName(gcinui.Form.CSS_NAME, 'prettify'), element);
+  this._copy = goog.dom.getElementByClass(
+      goog.getCssName(gcinui.Form.CSS_NAME, 'copy'), element);
 
-  if (this._prettifyParent) {
-    goog.dom.appendChild(this._prettifyParent, this._prettify);
+  if (this._buttonsParent) {
+    var buttons = goog.dom.getElementByClass(
+        goog.getCssName(gcinui.Form.CSS_NAME, 'buttons'), element);
+    goog.dom.appendChild(this._buttonsParent, buttons);
   }
 
   if (this._resultParent) {
@@ -118,6 +130,8 @@ gcinui.Form.prototype.enterDocument = function() {
 
   handler.listen(this._prettify, goog.events.EventType.CLICK,
       this._onPrettyClick, false, this);
+  handler.listen(this._copy, goog.events.EventType.CLICK,
+      this._onCopyClick, false, this);
 
   this._updateTextarea();
 };
@@ -164,12 +178,12 @@ gcinui.Form.prototype.setTextarea = function(element) {
 };
 
 /** @param {Element?} element */
-gcinui.Form.prototype.setPrettifyParent = function(element) {
+gcinui.Form.prototype.setButtonsParent = function(element) {
   if (this.getElement()) {
     throw Error('Already created');
   }
 
-  this._prettifyParent = element;
+  this._buttonsParent = element;
 };
 
 /** @param {Element?} element */
@@ -266,8 +280,7 @@ gcinui.Form.prototype._updateTextarea = function() {
     this._updateFields();
     this._updateResult();
   } catch(err) {
-    onFail();
-    throw err;
+    onFail(err);
   }
 };
 
@@ -355,5 +368,14 @@ gcinui.Form.prototype._onPrettyClick = function(evt) {
   }
   var fb = new gcinui.FormatBeautifier(this._mf);
   this._textarea.value = fb.toString();
+};
+
+/**
+ * @param {goog.events.Event} evt
+ * @private
+ */
+gcinui.Form.prototype._onCopyClick = function(evt) {
+  this._textarea.value = this._origMessage;
+  this._updateTextarea();
 };
 
