@@ -73,6 +73,7 @@
   cursor: pointer;
   display: inline-block;
   height: 19px;
+  margin-right: .3ex;
   position: relative;
 }
 
