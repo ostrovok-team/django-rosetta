@@ -257,7 +257,7 @@ def home(request):
             message.msgstr_plural = tmp
 
         tmpl = 'rosetta/pofile.html'
-        if rosetta_i18n_fn.endswith('singlepage.po'):
+        if 'singlepage' in rosetta_i18n_fn:
             tmpl = 'rosetta/pofile_singlepage.html'
 
         return render_to_response(tmpl, locals(), context_instance=RequestContext(request))
